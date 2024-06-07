@@ -65,9 +65,15 @@ ALLOWED_HOSTS = ['*']
 
 CORS_ALLOWED_CREDENTIALS = True
 
-CORS_ALLOW_ALL_ORIGINS = 'True'
+#CORS_ALLOW_ALL_ORIGINS = True
 
 # csrf 설정
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:3000',
+    'http://127.0.0.1:8000',
+    'https://port-0-filmcritique-server-ss7z32llwulw0m7.sel5.cloudtype.app',
+]
 
 CSRF_TRUSTED_ORIGINS = [
 
